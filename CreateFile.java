@@ -5,6 +5,9 @@ public class CreateFile {
   public static void main(String[] args) {
     try {
       File myObj = new File("filename.txt");
+      //File myObj = new File("C:\\Users\\MyName\\filename.txt");
+      // For creating a file on a specific directory on the computer.
+
       if (myObj.createNewFile()) {
         System.out.println("File created: " + myObj.getName());
       } else {
